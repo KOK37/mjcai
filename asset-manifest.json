@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mjcai/static/css/main.f855e6bc.css",
+    "main.js": "/mjcai/static/js/main.35a0ea1e.js",
+    "static/js/453.774c7a8c.chunk.js": "/mjcai/static/js/453.774c7a8c.chunk.js",
+    "static/media/logo.svg": "/mjcai/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/mjcai/index.html",
+    "main.f855e6bc.css.map": "/mjcai/static/css/main.f855e6bc.css.map",
+    "main.35a0ea1e.js.map": "/mjcai/static/js/main.35a0ea1e.js.map",
+    "453.774c7a8c.chunk.js.map": "/mjcai/static/js/453.774c7a8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.35a0ea1e.js"
+  ]
+}
