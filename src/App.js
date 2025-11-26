@@ -1,32 +1,31 @@
 import React from "react";
-//import Potato from "./Potato";
 
-function Food({name, picture}){
-  return (
-    <div>
-      <h1>I love {name} </h1>
-      <img src={picture} />
-    </div>
-  );
-}
+class App extends React.Component {
+  state = {
+    count : 0,
+  };
 
-const foodILike = [
-  {
-    name: 'Kimchi',
-    image: 'https://i.namu.wiki/i/IQUUvqSoy9bFErnGmPrFT5oDwvKi9ZaKitfBOGQZwOgdpSTVJE6QkWrObvxaeYpMv1raJqMyASttO_eUykJkwRKXRjDYm01T8bTS0qr_frsbLLa4TH0v1r42nnq2WdpG7jTf4j8LrmU49E8X3SXRxg.webp',
-  },
-  {
-    name: 'Samgiopsal',
-    image: 'https://i.namu.wiki/i/oFHlYDjoEh8f-cc3lNK9jAemRkbXxNGwUg7XiW5LGS6DF1P2x8GCeNQxbQhVIwtUS1u53YPw-uoyqpmLtrGNJA.webp',
+  add =()=>{
+    //console.log('add');
+    this.setState(current => ({
+      count : current.count + 1,
+    }));
   }
-];
+  minus =()=>{
+    this.setState(current => ({
+      count : current.count - 1,
+    }));
+  }
 
-function App() {
-  return (
-  <div> 
-    {foodILike.map(dish => (
-      <Food name={dish.name} picture={dish.image}/>))}
-  </div>
-  );
+  render() {
+    return(
+      <div>
+        <h1>The number is : {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+    )
+  }
 }
+
 export default App;
